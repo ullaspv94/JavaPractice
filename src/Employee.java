@@ -15,11 +15,17 @@ public class Employee {
 	String empLname;
 	String empDesg;
 	String empDept;
-	long empBaseSal;
+	long empSal;
+	Scanner sc = new Scanner(System.in);
+	
+	// Added constructor similar to getData() method to use for Assignment 2, Problem 5
+	Employee() {
+		this.getData();
+	}
 	
 	void getData () {
 		
-		Scanner sc = new Scanner(System.in);
+		System.out.println("Taking data for "+this.getClass());
 		System.out.println("Enter Employee No: ");
 		empNo = sc.nextInt();
 		System.out.println("Enter Employee Name: ");
@@ -29,26 +35,21 @@ public class Employee {
 		empDesg = sc.next();
 		System.out.println("Enter Employee Department: ");
 		empDept = sc.next();
-		System.out.println("Enter Employee Base Salary: ");
-		empBaseSal = sc.nextLong();
-		sc.close();
+		System.out.println("Enter Employee Salary: ");
+		empSal = sc.nextLong();
 	}
 	
 	void displayData() {
-		
 		System.out.println("Employee No: "+empNo);
 		System.out.println("Employee Name: "+empFname+" "+empLname);
 		System.out.println("Employee Designation: "+empDesg);
 		System.out.println("Employee Department: "+empDept);
-		System.out.println("Employee Base Salary: Rs. "+empBaseSal);
-		
+		System.out.println("Employee Salary: Rs. "+empSal);
 	}
 	
 	public static void main(String[] args) {
-		
 		Employee e = new Employee();
 		e.getData();
 		e.displayData();
-		
 	}
 }
