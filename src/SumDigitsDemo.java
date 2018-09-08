@@ -1,4 +1,4 @@
-package src;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -49,3 +49,4 @@ public class SumDigitsDemo extends SumDigits {
 }
 
 //TODO define an interface to access the sum method.
+//TODO giving 1234567890 as input returns wrong result.
