@@ -1,3 +1,6 @@
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 /* A program to find sum of digits for a given number
  * --------------------------------------------------------------------------------
  * This is actually a very simple program that uses modulo arithmetic to find the
@@ -7,9 +10,6 @@
  * 
  * Still a work in progress.
  */
-
-import java.util.InputMismatchException;
-import java.util.Scanner;
 
 class SumDigits {
 
