@@ -1,3 +1,4 @@
+package src;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -17,16 +18,10 @@ class SumDigits {
 		}
 		return sum;
 	}
-
-}
-
-public interface SumDigitsInterface {
-
-	long sum(long num);
 	
 }
 
-public class SumDigitsDemo extends SumDigits implements SumDigitsInterface {
+public class SumDigitsDemo extends SumDigits {
 	
 	SumDigitsDemo(long num) {
 		super(num);
@@ -53,4 +48,4 @@ public class SumDigitsDemo extends SumDigits implements SumDigitsInterface {
 	}
 }
 
-
+//TODO define an interface to access the sum method.
