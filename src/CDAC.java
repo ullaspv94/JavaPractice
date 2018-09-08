@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /*
- * Abstract Class and Interface definition for Coordinator class
+ * Abstract Class definition for Coordinator class
  * (Assignment 3, Problem 4) 
  */
 
@@ -13,6 +13,3 @@ abstract public class CDAC {
 	
 }
 
-interface cdacInterface {
-	void placementPercentage();
-}
