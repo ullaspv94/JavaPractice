@@ -15,7 +15,7 @@ public class Employee {
 	String empLname;
 	String empDesg;
 	String empDept;
-	long empSal;
+	long empBaseSal;
 	
 	void getData () {
 		
@@ -29,8 +29,8 @@ public class Employee {
 		empDesg = sc.next();
 		System.out.println("Enter Employee Department: ");
 		empDept = sc.next();
-		System.out.println("Enter Employee Salary: ");
-		empSal = sc.nextLong();
+		System.out.println("Enter Employee Base Salary: ");
+		empBaseSal = sc.nextLong();
 		sc.close();
 	}
 	
@@ -40,7 +40,7 @@ public class Employee {
 		System.out.println("Employee Name: "+empFname+" "+empLname);
 		System.out.println("Employee Designation: "+empDesg);
 		System.out.println("Employee Department: "+empDept);
-		System.out.println("Employee Salary: Rs. "+empSal);
+		System.out.println("Employee Base Salary: Rs. "+empBaseSal);
 		
 	}
 	
