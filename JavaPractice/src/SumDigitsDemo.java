@@ -1,7 +1,7 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class SumDigitsDemo extends SumDigits {
+public class SumDigitsDemo extends SumDigits implements SumDigitsInterface {
 	
 	SumDigitsDemo(long num) {
 		super(num);

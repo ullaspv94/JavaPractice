@@ -15,12 +15,6 @@ public class SumDigits {
 		}
 		return sum;
 	}
-	
-	public interface SumDigitsInterface {
-		
-		long sum(long num);
-		
-	}
 
 }	
 
