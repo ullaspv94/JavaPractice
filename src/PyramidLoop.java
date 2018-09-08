@@ -1,4 +1,4 @@
-/* Write a Java program using loops to print a pyramid
+/* Write a Java program using loops to print a pyramid (Assignment 1, Problem 5)
  * --------------------------------------------------------------------------------
  * A simple program that prints a sideways pyramid using two loops - one nested 
  * within the other loop.

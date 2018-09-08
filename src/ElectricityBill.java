@@ -1,7 +1,7 @@
 import java.text.DecimalFormat;
 import java.util.Scanner;
 
-/* Generate Electricity Bill
+/* Generate Electricity Bill (Assignment 1, Problem 9)
  * --------------------------------------------------------------------------------
  * Java program to generate electricity bill from number of units consumed and 
  * tiered rate structure

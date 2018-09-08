@@ -1,7 +1,7 @@
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-/* A program to find sum of digits for a given number
+/* A program to find sum of digits for a given number (Assignment 1, Problem 1)
  * --------------------------------------------------------------------------------
  * This is actually a very simple program that uses modulo arithmetic to find the
  * sum of digits of a number. I want to use this simple template to create a

@@ -1,12 +1,11 @@
-/* 
- * Return prime numbers up to a given number
+import java.util.Scanner;
+
+/* Return prime numbers up to a given number (Assignment 1, Problem 4)
  * -------------------------------------------------------------------------------- 
  * This program uses a for loop to cycle through all numbers below the given number
  * and uses a method to check if the current number is a prime. If yes the number 
  * is printed else the next number is evaluated.
  */
-
-import java.util.Scanner;
 
 public class PrintPrimes {
 

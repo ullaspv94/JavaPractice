@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-/* Swap two numbers 
+/* Swap two numbers (Assignment 1, Problem 3)
  * --------------------------------------------------------------------------------
  * A very simple program that takes two integers as input and swaps them. 
  */

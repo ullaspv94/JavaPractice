@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-/* Example with a class
+/* Example with a class (Assignment 1, Problem 8)
  * --------------------------------------------------------------------------------
  * Create a class Employee with data members empNo, empName, empDesignation, 
  * empDept and salary,date of joining and methods as getData() (to set the values 

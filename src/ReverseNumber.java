@@ -1,12 +1,12 @@
-/* A program to reverse the given number 
+import java.util.Scanner;
+
+/* A program to reverse the given number (Assignment 1, Problem 2) 
  * --------------------------------------------------------------------------------
  * A number is entered by the user. The number is reversed using two methods:
  * (1) using modulo arithmetic, and
  * (2) passing the number as a string to StringBuffer and reversing it using the 
  * in-built string manipulation functionality
  */
-
-import java.util.Scanner;
 
 public class ReverseNumber {
 
