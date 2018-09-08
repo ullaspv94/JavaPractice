@@ -1,10 +1,10 @@
 /* A program to reverse the given number 
-   --------------------------------------------------------------------------------
-   A number is entered by the user. The number is reversed using two methods:
-   (1) using modulo arithmetic, and
-   (2) passing the number as a string to StringBuffer and reversing it using the 
-   in-built string manipulation functionality
-*/
+ * --------------------------------------------------------------------------------
+ * A number is entered by the user. The number is reversed using two methods:
+ * (1) using modulo arithmetic, and
+ * (2) passing the number as a string to StringBuffer and reversing it using the 
+ * in-built string manipulation functionality
+ */
 
 import java.util.Scanner;
 
