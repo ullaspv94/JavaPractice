@@ -1,3 +1,4 @@
+/* A program to find sum of digits for a given number */
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
@@ -38,9 +39,9 @@ public class SumDigitsDemo extends SumDigits {
 			num = sc.nextLong();
 		} catch (InputMismatchException e) {
 			System.out.println("Number too large. Please enter a smaller number");
-		} finally {
-			sc.close();
-		}
+		} 
+		
+		sc.close();
 		
 		SumDigitsDemo s = new SumDigitsDemo(num);
 		System.out.println("Sum of digits of "+num+" is "+s.sum(num));
@@ -49,4 +50,4 @@ public class SumDigitsDemo extends SumDigits {
 }
 
 //TODO define an interface to access the sum method.
-//TODO giving 1234567890 as input returns wrong result.
+//TODO giving 1234567890 as input returns wrong result. Throw exception and handle it.
