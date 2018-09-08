@@ -11,9 +11,9 @@ public class Coordinator {
 
 	public static void main(String[] args) {
 		
-		cdacInterface p1 = new DAC();
-		cdacInterface p2 = new WIMC();
-		cdacInterface p3 = new DASS();
+		CdacInterface p1 = new DAC();
+		CdacInterface p2 = new WIMC();
+		CdacInterface p3 = new DASS();
 		
 		System.out.println("DAC");
 		p1.placementPercentage();
@@ -24,7 +24,7 @@ public class Coordinator {
 	}
 }
 
-class DAC extends CDAC implements cdacInterface {
+class DAC extends CDAC implements CdacInterface {
 
 	DAC() {
 		courseName = "DAC";
@@ -40,7 +40,7 @@ class DAC extends CDAC implements cdacInterface {
 	
 }
 
-class WIMC extends CDAC implements cdacInterface {
+class WIMC extends CDAC implements CdacInterface {
 
 	WIMC() {
 		courseName = "WIMC";
@@ -56,7 +56,7 @@ class WIMC extends CDAC implements cdacInterface {
 	
 }
 
-class DASS extends CDAC implements cdacInterface {
+class DASS extends CDAC implements CdacInterface {
 
 	DASS() {
 		courseName = "DASS";

@@ -4,7 +4,7 @@
  * (Assignment 3, Problem 4) 
  */
 
-public interface cdacInterface {
+public interface CdacInterface {
 
 	void placementPercentage();
 	
