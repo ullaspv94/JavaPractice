@@ -1,4 +1,12 @@
-/* A program to find sum of digits for a given number */
+/* A program to find sum of digits for a given number
+   --------------------------------------------------------------------------------
+   This is actually a very simple program that uses modulo arithmetic to find the
+   sum of digits of a number. I want to use this simple template to create a
+   generic class and interface that can take any two numbers and do a sum of its 
+   digits. 
+   
+   Still a work in progress.
+*/
 
 import java.util.InputMismatchException;
 import java.util.Scanner;

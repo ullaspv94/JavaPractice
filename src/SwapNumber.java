@@ -1,4 +1,7 @@
-/* Swap two numbers */
+/* Swap two numbers 
+   --------------------------------------------------------------------------------
+   A very simple program that takes two integers as input and swaps them. 
+*/
 
 import java.util.Scanner;
 

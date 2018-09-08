@@ -1,4 +1,10 @@
-/* Return prime numbers up to a given number */
+/* 
+  Return prime numbers up to a given number
+  -------------------------------------------------------------------------------- 
+  This program uses a for loop to cycle through all numbers below the given number
+  and uses a method to check if the current number is a prime. If yes the number 
+  is printed else the next number is evaluated.
+ */
 
 import java.util.Scanner;
 
