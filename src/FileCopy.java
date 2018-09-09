@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class FileCopy {
 	
-	static String PWD = "/Users/Ashutosh/Projects/JavaPractice/";
+	static String PWD = "/Users/Ashutosh/Projects/JavaPractice/files/";
 	
 	public static void main(String[] args) throws IOException {
 		
