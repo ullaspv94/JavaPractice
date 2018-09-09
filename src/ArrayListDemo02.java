@@ -7,7 +7,11 @@ import java.util.Scanner;
 /*
  *  ArrayList implementation from Collections (Assignment 4, Collections Problem 2)
  *  --------------------------------------------------------------------------------
- */
+ *   (1) Add items to Teacher ArrayList
+ *   (2) Add items to Student ArrayList
+ *   (3) Sort Student ArrayList by marks
+ *  
+ */	 
 
 public class ArrayListDemo02 {
 	
@@ -43,40 +47,25 @@ public class ArrayListDemo02 {
 		Student s6 = new Student(1006, "Marie Curie", "Radioactivity", 98);
 		Student.add(s6);
 			
-		System.out.println("--Using for-each Loop--");
+		System.out.println("--Printing Teachers using for-each Loop--");
 		for(Object o: Teacher) {
-			if(o.getClass() == Teacher1.class) {
 				Teacher1 t = (Teacher1) o;
 				t.dispT();
 			}
 			
-			if(o.getClass() == Student.class) {
-				Student s = (Student) o;
-				s.dispS();
-			}
-			
-		}
-		
+		System.out.println("--Printing Students using for-each Loop--");
 		for(Object o: Student) {
-			if(o.getClass() == Teacher1.class) {
-				Teacher1 t = (Teacher1) o;
-				t.dispT();
-			}
-			
-			if(o.getClass() == Student.class) {
 				Student s = (Student) o;
 				s.dispS();
 			}
-		}
 		
 		SortByMarks s = new SortByMarks();
 		Collections.sort(Student, s);
+		System.out.println("--Student List Sorted by Marks--");
 		for(Student o: Student) {
 			o.dispS();
 		}
-		
 	}
-
 }
 
 class Teacher1 {
