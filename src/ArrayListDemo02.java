@@ -1,6 +1,8 @@
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Scanner;
 
 /*
  *  ArrayList implementation from Collections (Assignment 4, Collections Problem 2)
@@ -95,12 +97,27 @@ class Teacher1 {
 	
 }
 
-class Student {
+class Student implements Serializable {
 	
 	int rollNo;
 	String name;
 	String course;
 	int marks;
+	
+	// No need of default constructor here but defining it to use Student class in 
+	// other programs
+	
+	Student() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter Roll No: ");
+		rollNo = sc.nextInt();
+		System.out.print("Enter Name: ");
+		name = sc.next();
+		System.out.print("Enter Course: ");
+		course = sc.next();
+		System.out.print("Enter Marks: ");
+		marks = sc.nextInt();
+	}
 	
 	Student(int rollNo, String name, String course, int marks) {
 		this.rollNo = rollNo;
@@ -117,7 +134,6 @@ class Student {
 
 class SortByMarks implements Comparator<Student> {
 
-	@Override
 	public int compare(Student o1, Student o2) {
 		if(o1.marks > o2.marks)
 			return 1;
