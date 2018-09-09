@@ -19,6 +19,10 @@ public class Employee {
 	Scanner sc = new Scanner(System.in);
 	
 	// Added constructor similar to getData() method to use for Assignment 2, Problem 5
+	// When the program runs the constructor runs and then the getData() method also runs.
+	// So employe data has to be entered two times
+	// TODO fix this
+	
 	Employee() {
 		this.getData();
 	}

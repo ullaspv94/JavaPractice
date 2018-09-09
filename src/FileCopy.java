@@ -6,7 +6,10 @@ import java.util.Scanner;
  * --------------------------------------------------------------------------------
  * Please update PWD before running the program.
  * 
+ * NOTE: This program is not working as expected needs fixing
  */
+
+// TODO Fix the program
 
 public class FileCopy {
 	
@@ -21,16 +24,21 @@ public class FileCopy {
 		System.out.println("Enter Destination File: ");
 		String dest = sc.next();
 		
-		FileInputStream fin = new FileInputStream(PWD+source);
-		FileOutputStream fout = new FileOutputStream(PWD+dest);
+		FileReader fread = new FileReader(PWD+source);
+		BufferedReader bread = new BufferedReader(fread);
+		FileWriter fwrite = new FileWriter(PWD+dest);
+		BufferedWriter bwrite = new BufferedWriter(fwrite);
 		
-		while (fin.read() != -1) fout.write(fin.read());
+		while (bread.read() != -1) {
+			String data = bread.readLine();
+			bwrite.write(data);
+		}
 		
 		System.out.println("File copied to destination!");
 		 	
 		sc.close();
-		fin.close();
-		fout.close();
+		fread.close();
+		fwrite.close();
 
 	}
 

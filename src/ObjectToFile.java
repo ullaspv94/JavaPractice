@@ -17,6 +17,8 @@ import java.util.Scanner;
 
 public class ObjectToFile extends Student {
 	
+	static int PASSING_MARKS = 60;
+	
 	public static void main(String[] args) throws IOException, ClassNotFoundException {
 		
 		String PWD = "/Users/Ashutosh/Projects/JavaPractice/files/";
@@ -51,9 +53,11 @@ public class ObjectToFile extends Student {
 		
 		Iterator itr = al1.iterator();
 		
+		// Taking 60 as passing marks, iterating over the file and printing result
+		
 		while(itr.hasNext()) {
 			Student s0 = (Student) itr.next();
-			if (s0.marks > 60)
+			if (s0.marks >= PASSING_MARKS)
 				System.out.println("Student "+s0.name+" is PASS");
 			else
 				System.out.println("Student "+s0.name+" is FAIL");

@@ -1,6 +1,11 @@
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
+/*
+ * Implement a PhoneBook using HashMap (Assignment 4, Problem 5)
+ * --------------------------------------------------------------------------------
+ * Problem yet to be completed
+ */
 
 public class TestPhoneBook {
 
@@ -56,6 +61,7 @@ public class TestPhoneBook {
 			pbDisplay(PhoneBook);
 			break;
 			
+// TODO Complete Case 3 and Case 4			
 //		case 3:
 //			System.out.print("Search Number for a Name: ");
 //			PhoneNumber pns = (PhoneNumber) PhoneBook.get(ps);
