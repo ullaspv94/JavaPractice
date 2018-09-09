@@ -4,7 +4,11 @@ import java.util.Scanner;
  * Java program to show JDBC Connectivity and database operations 
  * (Assignment 5, Problem 4)
  * --------------------------------------------------------------------------------
- * Before running this program
+ * Before running this program:
+ *  (1) Install MySQL and MySQL Workbench (if you're not comfortable with command-line)
+ *  (2) Create a new Schema named "hr"
+ *  (3) Run the SQL script given in the "hr_employees.sql" file to create table and
+ *      pre-populate it with dummy data.
  */
 
 
