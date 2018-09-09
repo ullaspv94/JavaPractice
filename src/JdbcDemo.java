@@ -9,9 +9,12 @@ import java.util.Scanner;
  *  (2) Create a new Schema named "hr"
  *  (3) Run the SQL script given in the "hr_employees.sql" file to create table and
  *      pre-populate it with dummy data.
+ *  (4) Update your root password in this file
+ *  
+ *  Please note: This program has been tested only with MySQL. You may need to change
+ *  the connection parameters snd query structure if you are are using any other 
+ *  database. 
  */
-
-
 
 public class JdbcDemo {
 	
@@ -85,13 +88,15 @@ public class JdbcDemo {
 			break;
 			
 		case 3:
+			String sql3 = "UPDATE `employees` SET emp_salary = (emp_salary * 1.2) WHERE `emp_doj` < ?";
+			pstmt = conn.prepareStatement(sql3);
+			
 			System.out.println("Enter DoJ: ");
 			String doj = j.sc.next();
+			pstmt.setString(1, doj);
 			
-			
-			
-			
-			
+			int rs3 = pstmt.executeUpdate();
+			System.out.println(rs3+" records updated");
 			break;
 			
 		case 4:
@@ -120,7 +125,7 @@ public class JdbcDemo {
 			System.out.println("\n\nWhat do you want to do today?");
 			System.out.println("1. Add a new record");
 			System.out.println("2. Select people with salary higher than a number");
-			System.out.println("3. Increment salary of people whose DoJ is before a date");
+			System.out.println("3. Increment salary by 20% for people whose DoJ is before a date");
 			System.out.println("4. Delete a record using Employee ID");
 			System.out.println("5. Exit");
 			System.out.print("\nEnter your choice: ");
