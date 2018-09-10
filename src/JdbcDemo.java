@@ -50,7 +50,7 @@ public class JdbcDemo {
 		j.choice = j.showMenu();
 		switch(j.choice) {
 		
-		case 1:
+		case 1: // not using prepared statement
 			System.out.print("Enter Emp ID: ");
 			j.emp_id = j.sc.nextInt();
 			System.out.print("Enter Emp Name: ");
@@ -73,7 +73,7 @@ public class JdbcDemo {
 			System.out.println(rs1+" records added");
 			break;
 			
-		case 2:
+		case 2: // using prepared statement
 			String sql2 = "SELECT * from employees WHERE `emp_salary` > ?";
 			pstmt = conn.prepareStatement(sql2);
 			
@@ -87,7 +87,7 @@ public class JdbcDemo {
 			}
 			break;
 			
-		case 3:
+		case 3: // using prepared statement
 			String sql3 = "UPDATE `employees` SET emp_salary = (emp_salary * 1.2) WHERE `emp_doj` < ?";
 			pstmt = conn.prepareStatement(sql3);
 			
@@ -99,7 +99,7 @@ public class JdbcDemo {
 			System.out.println(rs3+" records updated");
 			break;
 			
-		case 4:
+		case 4: // using prepared statement
 			String sql4 = "DELETE FROM employees WHERE `emp_id` = ?";
 			pstmt = conn.prepareStatement(sql4);
 			
