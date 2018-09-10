@@ -154,7 +154,6 @@ class phonebook{
 }
 public class HshMap {
 	public static void main(String[] args) {
-		System.out.println("HEREE");
 		Scanner sc=new Scanner(System.in);
 		long num;
 		int loop=1;
